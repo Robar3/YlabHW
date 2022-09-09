@@ -3,19 +3,15 @@ package hw2;
 public class Ex3 {
 
     public static void main(String[] args) {
-
-
-        Ex3 ex3 = new Ex3();
-
-        System.out.println(ex3.fuzzySearch("car", "ca6$$#_rtwheel")); // true
-        System.out.println(ex3.fuzzySearch("cwhl", "cartwheel")); // true
-        System.out.println(ex3.fuzzySearch("cwhee", "cartwheel")); // true
-        System.out.println(ex3.fuzzySearch("cartwheel", "cartwheel")); // true
-        System.out.println(ex3.fuzzySearch("cwheeel", "cartwheel")); // false
-        System.out.println(ex3.fuzzySearch("lw", "cartwheel")); // false
+        System.out.println(fuzzySearch("car", "ca6$$#_rtwheel")); // true
+        System.out.println(fuzzySearch("cwhl", "cartwheel")); // true
+        System.out.println(fuzzySearch("cwhee", "cartwheel")); // true
+        System.out.println(fuzzySearch("cartwheel", "cartwheel")); // true
+        System.out.println(fuzzySearch("cwheeel", "cartwheel")); // false
+        System.out.println(fuzzySearch("lw", "cartwheel")); // false
     }
 
-    public boolean fuzzySearch(String expecting, String fullString) {
+    public static boolean fuzzySearch(String expecting, String fullString) {
 
         char[] expectingChar = expecting.toCharArray();
         char[] fullStringChar = fullString.toCharArray();
