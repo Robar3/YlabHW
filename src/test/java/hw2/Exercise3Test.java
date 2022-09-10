@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 
 
 
-class Ex3Test {
+class Exercise3Test {
 
-    Ex3 ex3 = new Ex3();
+    Exercise3 ex3 = new Exercise3();
 
     @Test
     void fuzzySearchTest() {

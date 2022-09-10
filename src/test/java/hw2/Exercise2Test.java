@@ -3,11 +3,9 @@ package hw2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+class Exercise2Test {
 
-class Ex2Test {
-
-    Ex2 ex2 = new Ex2();
+    Exercise2 ex2 = new Exercise2();
     Integer[] arr={3, 4, 2, 7};
     int[]expected={3,7};
     Integer[] arr2={5,5,5,5,5};

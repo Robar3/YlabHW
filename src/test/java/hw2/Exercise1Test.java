@@ -9,9 +9,9 @@ import java.util.Map;
 import static hw2.ComplexExamples.RAW_DATA;
 
 
-class Ex1Test {
+class Exercise1Test {
 
-    Ex1 ex1 = new Ex1();
+    Exercise1 ex1 = new Exercise1();
     Map<String, Long> sortMap = ex1.distinctPersonAndGroupByNameAndSort(RAW_DATA);
     Map<String, Long> expected = new HashMap<>();
 
